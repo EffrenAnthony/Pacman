@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Simulation - Scheduler</title>
+    <!-- DO NOT CHANGE THIS LINE OF CODE -->
+   
+</head>
+<style>
+    body{
+        background-color: black;
+        height: 100vh;
+    }
+    #Ghost{
+        left: -360px;
+    }
+    #Cherry{
+        left: 90%;
+    }
+    #packmanContent{
+        border-top: 7px blue solid;
+        border-bottom: 7px blue solid;
+        height: 230px;
+    }
+    #actionContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    button{
+        padding: 10px 50px 10px 50px;
+        font-size: 50px;
+        border: none;
+    }
+    button:hover{
+        background-color: blue;
+        color: white;
+    }
+</style>
+<body>
+    <div id='packmanContent'>
+        <img id="Cherry" src="images/cherry.jpeg" width='200' onclick="Run()" style="position:absolute"> </img>
+        <img id="PacMan" src="images/PacMan1.png" width='200' onclick="Run()" style="position:absolute"> </img>
+        <img id="Ghost" src="images/ghost.png" width='200' onclick="Run()" style="position:absolute"> </img>
+    </div>
+    <div id='actionContent'>
+        <button id="button" onclick="start()">Stop</button>
+    </div>
+</body>
+<script src="./pacman.js"></script>
+</html>
